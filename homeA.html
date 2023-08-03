@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+
+
+<body class="Background">
+
+<div class="TopRect" >
+    <div class="search-bar">
+
+        <button onclick="ReadSearch()"><img src="SearchIcon.svg"></button>
+        <input type="text"placeholder="Search for music"name="q" size="50" id="Search">
+
+
+    </div>
+
+
+</div>
+<div class="RightRect">
+
+        <img src="SoulosisLogo.png" class="LogoPlacement" > <br>
+
+        <div>
+            <div class="Buttons">
+
+                <button><img src="Home.png" class="HomeNotHover"><img src="HomeHover.png" class="HomeHover"></button>
+                <a href="../Admin/adminpage.html"><button><img src="Explore.png" class="ExploreNotHover"> <img src="ExploreHover.png" class="ExploreHover"></button></a>
+                <a href="fav.html"><button><img src="Fav.png" id="fav" class="FavNotHover"><img src="FavHover.png" id="fav" class="FavHover"> </button></a>
+                <a href="logout.html">  <button><img src="door-closed-fill.svg"  style="width: 40px;" class="logoutnothover"><img   src="door-open-fill.svg" style="width: 40px;" class="logouthover"></button></a>
+            </div>
+        </div>
+</div>
+
+
+
+<div class="MusicLeftRect">
+<h1 style ="text-shadow: 3px 0px black;">
+  Playlist
+</h1>
+<div class="menuSong">
+    <li class="songItem">
+      <span>01</span>
+      <img src="1.png">
+      <h5>
+        Dear Desolation
+        <div class="subtitle">Thy Art Is Murder</div>
+
+        </h5>
+        <i style="margin-left: 75px; " class="bi playlistplay bi-play-circle-fill" id="1"></i>
+    </li>
+
+    <li class="songItem">
+      <span>02</span>
+      <img src="2.png">
+      <h5>
+        Humble
+        <div class="subtitle">Kendrick Lamar</div>
+
+        </h5>
+        <i style="margin-left: 103px; "class=" bi playlistplay bi-play-circle-fill" id="2"></i>
+    </li>
+    <li class="songItem">
+      <span>03</span>
+      <img src="3.png">
+      <h5>
+        Devil Doesn't Bargain
+        <div class="subtitle">Alec Benjamin</div>
+        </h5>
+        <i style="margin-left: 48px; "class="bi playlistplay bi-play-circle-fill" id="3"></i>
+    </li>
+    <li class="songItem">
+      <span>04</span>
+      <img src="4.png">
+      <h5>
+        Shitan
+        <div class="subtitle">Abyusif</div>
+
+        </h5>
+        <i style="margin-left: 135px;" class="bi playlistplay bi-play-circle-fill" id="4"></i>
+    </li>
+    <li class="songItem">
+      <span>05</span>
+      <img src="5.png">
+      <h5>
+        Candy Shop
+        <div style="font-weight: 400;" class="subtitle" >50 Cent</div>
+
+        </h5>
+        <i style="margin-left: 100px; "class="bi playlistplay bi-play-circle-fill" id="5"></i>
+    </li>
+    <li class="songItem">
+      <span>06</span>
+      <img src="6.png">
+      <h5>
+        Derniere Danse
+        <div class="subtitle">Indila</div>
+
+        </h5>
+        <i style="margin-left: 80px; "class="bi playlistplay bi-play-circle-fill" id="6"></i>
+    </li>
+    <li class="songItem">
+      <span>07</span>
+      <img src="7.png">
+      <h5>
+        Good Thing
+        <div class="subtitle">Zedd and Kehlani</div>
+
+        </h5>
+        <i style="margin-left: 91px; "class="bi playlistplay bi-play-circle-fill" id="7"></i>
+    </li>
+  </div>
+</div>
+
+   <span class="title">
+    <h4 style="font-weight: 700; text-shadow: 2px 0px  rgb(79, 189, 186);">
+
+        Top Albums
+
+    </h4>
+   </span>
+
+
+   <div class="albums">
+     <div class="poster1">
+       <img src="album1.jpg">
+       <h3>Dua lipa</h3>
+       <p>Dua lipa</p>
+     </div>
+
+     <div class="poster2">
+      <img src="album2.jpg" >
+      <h3>This is acting</h3>
+       <p>Sia</p>
+    </div>
+
+    <div class="poster3">
+      <img src="album3.jpg">
+      <h3>Narrated for you</h3>
+       <p>Alec benjamin</p>
+    </div>
+
+    <div class="poster4">
+      <img src="album4.jpg">
+      <h3>Shakira</h3>
+       <p>Shakira</p>
+    </div>
+
+    <div class="poster5">
+      <img src="album5.png">
+      <h3>21</h3>
+       <p>Adele</p>
+    </div>
+
+   </div>
+
+
+
+
+
+
+   <section class="section">
+    <div class="slider">
+      <div class="slide">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+
+        <div class="st">
+          <img src="image1.jpg" alt="">
+
+        </div>
+        <div class="st first">
+          <img src="image2.jpg" alt="">
+
+        </div>
+        <div class="st">
+          <img src="image3.jpg" alt="">
+
+        </div>
+        <div class="st">
+          <img src="image4.jpg" alt="">
+
+        </div>
+
+        <div class="nav-auto">
+          <div class="a-b1"></div>
+          <div class="a-b2"></div>
+          <div class="a-b3"></div>
+          <div class="a-b4"></div>
+        </div>
+
+      </div>
+
+      <div class="nav_m">
+         <label for="radio1" class="m-btn"></label>
+         <label for="radio2" class="m-btn"></label>
+         <label for="radio3" class="m-btn"></label>
+         <label for="radio4" class="m-btn"></label>
+      </div>
+
+    </div>
+
+  </section>
+
+  <script type="text/javascript">
+    var counter=1;
+    setInterval(function(){
+      document.getElementById('radio'+counter).checked=true;
+      counter++;
+      if(counter>4)
+      {
+        counter=1;
+      }
+    },5400);
+
+  </script>
+
+
+
+  <div class="BottomRec">
+
+
+       <div class="PhotoHolder">  </div>
+      <img  src="1.png" class="PhotoHolder" alt="sora" id="posterr">
+
+      <h5 id="track_name">  Dear Desolation <br>
+          <div class="subtitle">Thy Art Is Murder</div>
+      </h5>
+
+
+
+      <div class="icon">
+        <i  class="bi bi-skip-start-fill" id="back" ></i>
+
+        <i class="bi bi-play-fill" id="play" ></i>
+
+        <i class="bi bi-skip-end-fill" id="next"></i>
+      </div>
+
+              <span class="time1" id="currentstart">0:00</span>
+              <span class="time2" id="currentend">0:00</span>
+              <div class="bar">
+                <input type="range" id="seek" min="0" max="10  0">
+                  <div class="bar2" id="bar2"></div>
+                  <div class="dot"></div>
+              </div>
+
+              <i style="position: absolute; right: 290px; bottom: 18px; color:white;"  class="bi bi-volume-down-fill" id="vol_icon"></i>
+
+              <div class="vol">
+
+                <input type="range" id="vol" min="0" max="100">
+                <div class="volbar"></div>
+                  <div class="dot" id="vol_dot"></div>
+              </div>
+  </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Mazika.js"></script>
+  </body>
+  </html>

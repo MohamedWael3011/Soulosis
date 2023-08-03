@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body class="Background">
+<div class="RightRectFAV">
+        <img src="SoulosisLogo.png" class="LogoPlacement" > <br>
+        <div>
+            <div class="Buttons">
+
+                <a href="home.html"><button><img src="Home.png" class="HomeNotHover"><img src="HomeHover.png" class="HomeHover"></button></a>
+                <button><img src="Fav.png" id="fav" class="FavNotHover"><img src="FavHover.png" id="fav" class="FavHover"> </button>
+
+            </div>
+        </div>
+</div>
+
+<hr>
+
+<div class="MusicLeftRectFAV">
+<h1 style ="text-shadow: 3px 0px black;">
+Liked Songs <3
+</h1>
+<div class="menuSong">
+    <li class="songItem">
+      <span>01</span>
+      <img src="1.png">
+      <h5>
+        Dear Desolation
+        <div class="subtitle">Thy Art Is Murder</div>
+
+        </h5>
+        <i style="position: absolute; right: 20px; " class="bi playlistplay bi-play-circle-fill" id="1"></i>
+    </li>
+
+    <li class="songItem">
+      <span>02</span>
+      <img src="2.png">
+      <h5>
+        Humble
+        <div class="subtitle">Kendrick Lamar</div>
+
+        </h5>
+        <i style="position: absolute; right: 20px; "class=" bi playlistplay bi-play-circle-fill" id="2"></i>
+    </li>
+    <li class="songItem">
+      <span>03</span>
+      <img src="3.png">
+      <h5>
+        Devil Doesn't Bargain
+        <div class="subtitle">Alec Benjamin</div>
+        </h5>
+        <i style="position: absolute; right: 20px; "class="bi playlistplay bi-play-circle-fill" id="3"></i>
+    </li>
+    <li class="songItem">
+      <span>04</span>
+      <img src="4.png">
+      <h5>
+        Shitan
+        <div class="subtitle">Abyusif</div>
+
+        </h5>
+        <i style="position: absolute; right: 20px;" class="bi playlistplay bi-play-circle-fill" id="4"></i>
+    </li>
+    <li class="songItem">
+      <span>05</span>
+      <img src="5.png">
+      <h5>
+        Candy Shop
+        <div style="font-weight: 400;" class="subtitle" >50 Cent</div>
+
+        </h5>
+        <i style="position: absolute; right: 20px; "class="bi playlistplay bi-play-circle-fill" id="5"></i>
+    </li>
+    <li class="songItem">
+      <span>06</span>
+      <img src="6.png">
+      <h5>
+        Derniere Danse
+        <div class="subtitle">Indila</div>
+
+        </h5>
+        <i style="position: absolute; right: 20px; "class="bi playlistplay bi-play-circle-fill" id="6"></i>
+    </li>
+    <li class="songItem">
+      <span>07</span>
+      <img src="7.png">
+      <h5>
+        Good Thing
+        <div class="subtitle">Zedd and Kehlani</div>
+
+        </h5>
+        <i style="position: absolute; right: 20px; "class="bi playlistplay bi-play-circle-fill" id="7"></i>
+    </li>
+  </div>
+</div>
+
+
+
+<div class="BottomRec">
+
+
+     <div class="PhotoHolder">  </div>
+    <img  src="1.png" class="PhotoHolder" alt="sora" id="posterr">
+
+    <h5 id="track_name">  Dear Desolation <br>
+        <div class="subtitle">Thy Art Is Murder</div>
+    </h5>
+
+
+
+    <div class="icon">
+      <i  class="bi bi-skip-start-fill" id="back" ></i>
+
+      <i class="bi bi-play-fill" id="play" ></i>
+
+      <i class="bi bi-skip-end-fill" id="next"></i>
+    </div>
+
+            <span class="time1" id="currentstart">0:00</span>
+            <span class="time2" id="currentend">0:00</span>
+            <div class="bar">
+              <input type="range" id="seek" min="0" max="10  0">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+
+            <i style="position: absolute; right: 290px; bottom: 18px; color:white;"  class="bi bi-volume-down-fill" id="vol_icon"></i>
+
+            <div class="vol">
+
+              <input type="range" id="vol" min="0" max="100">
+              <div class="volbar"></div>
+                <div class="dot" id="vol_dot"></div>
+            </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="Mazika.js"></script>
+</body>
+</html>
